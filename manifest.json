@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Intelligent medical assistant",
+    "version": "1.0",
+    "description": "Thinking about the disease and how to treat it based on the symptoms searched",
+    "permissions": [
+        "activeTab"
+    ],
+
+    "host_permissions": [
+    "https://api-inference.huggingface.co/" 
+    ],
+
+    "omnibox": {
+        "keyword": "symptom"   
+    },
+    
+    "background": {
+        "service_worker": "background.js"
+    }
+}
